@@ -1,0 +1,42 @@
+.resume-body {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent body scrolling */
+}
+
+/* Scrollable form */
+.form-scrollable {
+    width: 40%;
+    overflow-y: auto;
+    padding: 1rem;
+    scrollbar-width: none;
+}
+
+/* Scrollable preview */
+.preview-scrollable {
+    width: 70%;
+    overflow-y: auto;
+    justify-content: center;
+    display: flex;
+    scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .resume-body {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .form-scrollable,
+  .preview-scrollable {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+}

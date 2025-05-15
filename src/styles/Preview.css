@@ -1,0 +1,126 @@
+.preview-container {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 3rem 4rem;
+  height: fit-content;
+  margin: 1rem;
+  width: 7.27in; /* to leave 0.5in margin on each side of A4 */
+  padding: 0.5in;
+  background: white;
+}
+
+.resume-content {
+  margin: 0 auto;
+  font-family: 'Merriweather', serif;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resume-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.separator {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .separator {
+    display: inline;
+  }
+}
+
+.contact-info a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+#title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: black;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 0.75rem;
+}
+
+.job-header > h2,
+.project-header > h2,
+.certificate > h2,
+.education > h2 {
+  margin-bottom: 0.2rem;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.experience-entry,
+.project-entry,
+.certificate-entry,
+.education-entry {
+    color: black;
+}
+
+
+.job-header,
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.date-range {
+  font-size: 1rem;
+  font-style: italic;
+  color: black;
+}
+
+.company-name {
+  color: black;
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  font-style: italic;
+}
+
+.job-description,
+.project-description {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.degree-info-date {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 1rem;
+    color: black;
+    margin: 0.25rem 0;
+}
