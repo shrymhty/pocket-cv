@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("YOUR API KEY);
+const genAI = new GoogleGenerativeAI("YOUR API KEY");
 
 export const enhanceWithGemini = async (text, type) => {
   const promptMap = {
